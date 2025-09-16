@@ -1,88 +1,199 @@
 # AnushkaRaut.github.io
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anushka Raut - Personal Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #555;
-        }
-        .contact-info {
-            list-style: none;
-            padding: 0;
-        }
-        .contact-info li {
-            margin-bottom: 5px;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .job-title {
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anushka Raut — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(270deg, #ff6b6b, #f7b42c, #6a82fb, #00c6ff);
+      background-size: 800% 800%;
+      animation: bgShift 15s ease infinite;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    @keyframes bgShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 10px 0;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 1.2rem;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: yellow;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+    .hero img {
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 30px;
+      border-radius: 30px;
+      background: #fff;
+      color: #000;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+      background: #ffe600;
+    }
+    .section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      text-align: left;
+      transition: transform 0.4s, opacity 0.4s;
+      opacity: 0;
+    }
+    .card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .card:hover {
+      transform: scale(1.05);
+      background: rgba(255,255,255,0.2);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: rgba(0,0,0,0.3);
+    }
+    .gif {
+      max-width: 150px;
+      margin: 20px auto;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Anushka Raut</h1>
-        <p>Class of 2026</p>
+  <header>
+    <h1>✨ Anushka Raut ✨</h1>
+    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:Anushka.Raut2026@bitsom.edu.in" style="color:#fff">Anushka.Raut2026@bitsom.edu.in</a></p>
+    <p><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/anushka-raut-49255b1b4" target="_blank" style="color:#fff">LinkedIn</a></p>
+    <p><i class="fa-solid fa-phone"></i> +91 9920891949</p>
+    <nav>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#responsibility">Positions</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#extracurriculars">Extracurriculars</a>
+    </nav>
+  </header>
 
-        <ul class="contact-info">
-            <li>Email: Anushka.Raut2026@bitsom.edu.in</li>
-            <li>LinkedIn: <a href="https://linkedin.com/in/anushka-raut-49255b1b4">linkedin.com/in/anushka-raut-49255b1b4</a></li>
-            <li>Phone: +91 9920891949</li>
-        </ul>
+  <section class="hero">
+    <img src="https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif" alt="Working GIF">
+    <h2>Welcome to My World 🚀</h2>
+    <p>MBA @ BITSoM | Ex-EY | Aspiring Product Leader</p>
+    <a class="btn" href="Anushka_Raut_CV.pdf" download><i class="fa-solid fa-file-pdf"></i> Download CV</a>
+  </section>
 
-        <div class="section">
-            <h2>EDUCATION</h2>
-            <p><strong>MBA</strong>, BITS School of Management (BITSOM), Mumbai (Class of 2026)</p>
-            <p><strong>B.Com</strong>, R. A. Podar College of Commerce & Economics (2021)</p>
-            <p><strong>Higher Secondary Certificate Exam</strong>, D.A.V. International School (2018)</p>
-            <p><strong>Senior Secondary Examination</strong>, D.A.V. International School (2016)</p>
-        </div>
+  <section id="education" class="section">
+    <h2>🎓 Education</h2>
+    <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" class="gif" alt="Book GIF">
+    <div class="card">MBA — BITSoM, Mumbai (Class of 2026)</div>
+    <div class="card">B.Com — R. A. Podar College of Commerce & Economics (CGPA 8.16, 2021)</div>
+    <div class="card">HSC — D.A.V. International School (88%, 2018)</div>
+    <div class="card">SSC — D.A.V. International School (CGPA 9.6, 2016)</div>
+  </section>
 
-        <div class="section">
-            <h2>PROFESSIONAL EXPERIENCE</h2>
-            <h3>EY India - Summer Intern, Business Consulting (April-May '25)</h3>
-            <ul>
-                <li>Evaluated 8+ Tier-2 Indian cities for a tech client's GCC setup.</li>
-                <li>Conducted gap analysis of 15+ finance processes for a pharma client.</li>
-                <li>Designed HR transition blueprint for a global agribusiness firm.</li>
-            </ul>
+  <section id="experience" class="section">
+    <h2>💼 Experience</h2>
+    <img src="https://media.giphy.com/media/xT9IglzY3lTjz8OhTi/giphy.gif" class="gif" alt="Work GIF">
+    <div class="card"><strong>EY India — Summer Intern</strong><br>Evaluated Tier-2 cities for GCC setup, reduced process inefficiencies by ~25%.</div>
+    <div class="card"><strong>EY India — Senior Associate</strong><br>Led hiring, onboarding 200+ hires, drove merger integration & employer branding.</div>
+  </section>
 
-            <h3>EY India - Senior Associate, Talent Acquisition</h3>
-            <ul>
-                <li>Supported EY Ripples Disha Scholars by reviewing and guiding resumes for 10 candidates.</li>
-                <li>Managed marketing initiatives (e.g., EY Ripples).</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>EXTRACURRICULAR ACTIVITIES</h2>
-            <ul>
-                <li><strong>Colgate LEAP Forward:</strong> Selected for Masterclass on innovation as a part of the 2024 program.</li>
-                <li><strong>Sports:</strong> Secured a Second Place in Athletics and in a Relay event at the school level in 2016.</li>
-            </ul>
-        </div>
-    </div>
+  <section id="responsibility" class="section">
+    <h2>📌 Positions of Responsibility</h2>
+    <img src="https://media.giphy.com/media/26ufcYAkp8e66vanu/giphy.gif" class="gif" alt="Leadership GIF">
+    <div class="card">Placement Committee — Senior Member</div>
+    <div class="card">Shelf Indulgence Club — Promoted campus book culture</div>
+    <div class="card">Industrial Interface Forum — Organized guest lectures & visits</div>
+  </section>
+
+  <section id="certifications" class="section">
+    <h2>📜 Certifications</h2>
+    <img src="https://media.giphy.com/media/l0HlNaQ6gWfllcjDO/giphy.gif" class="gif" alt="Certificate GIF">
+    <div class="card">EY Strategy Bronze (2022)</div>
+    <div class="card">EY Process Innovation Bronze (2023)</div>
+    <div class="card">EY Marketing Bronze (2023)</div>
+  </section>
+
+  <section id="extracurriculars" class="section">
+    <h2>🌟 Extracurriculars</h2>
+    <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" class="gif" alt="Sports GIF">
+    <div class="card">Colgate LEAP Forward — Innovation Masterclass</div>
+    <div class="card">EY CSR — Mentored students & supported EY Ripples</div>
+    <div class="card">Sports — 2nd place in Athletics & Relay</div>
+  </section>
+
+  <footer>
+    © 2025 Anushka Raut — Built with ❤️ | <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+  </footer>
+
+  <script>
+    // Scroll fade-in animation
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
+  </script>
 </body>
 </html>
