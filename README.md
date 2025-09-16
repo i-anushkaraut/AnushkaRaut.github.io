@@ -3,120 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - GitHub Profile</title>
+    <title>Anushka Raut - Personal Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
             color: #333;
         }
         .container {
-            max-width: 960px;
-            margin: 0 auto;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
             padding: 20px;
-        }
-        .header {
-            text-align: center;
-            padding: 50px 0;
-            background-color: #4CAF50;
-            color: white;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .header h1 {
-            margin: 0;
-            font-size: 2.5em;
+        h1, h2 {
+            color: #555;
         }
-        .header p {
-            font-size: 1.2em;
+        .contact-info {
+            list-style: none;
+            padding: 0;
         }
-        .profile-picture {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid white;
-            margin-top: 20px;
+        .contact-info li {
+            margin-bottom: 5px;
         }
         .section {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .section h2 {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 10px;
-            color: #4CAF50;
-        }
-        .project {
             margin-bottom: 20px;
         }
-        .project h3 {
-            margin-top: 0;
-            color: #333;
+        ul {
+            padding-left: 20px;
         }
-        .project a {
-            color: #4CAF50;
-            text-decoration: none;
+        .job-title {
             font-weight: bold;
-        }
-        .project a:hover {
-            text-decoration: underline;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
-            color: #777;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
+        <h1>Anushka Raut</h1>
+        <p>Class of 2026</p>
+
+        <ul class="contact-info">
+            <li>Email: Anushka.Raut2026@bitsom.edu.in</li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/anushka-raut-49255b1b4">linkedin.com/in/anushka-raut-49255b1b4</a></li>
+            <li>Phone: +91 9920891949</li>
+        </ul>
+
+        <div class="section">
+            <h2>EDUCATION</h2>
+            <p><strong>MBA</strong>, BITS School of Management (BITSOM), Mumbai (Class of 2026)</p>
+            <p><strong>B.Com</strong>, R. A. Podar College of Commerce & Economics (2021)</p>
+            <p><strong>Higher Secondary Certificate Exam</strong>, D.A.V. International School (2018)</p>
+            <p><strong>Senior Secondary Examination</strong>, D.A.V. International School (2016)</p>
+        </div>
+
+        <div class="section">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            <h3>EY India - Summer Intern, Business Consulting (April-May '25)</h3>
+            <ul>
+                <li>Evaluated 8+ Tier-2 Indian cities for a tech client's GCC setup.</li>
+                <li>Conducted gap analysis of 15+ finance processes for a pharma client.</li>
+                <li>Designed HR transition blueprint for a global agribusiness firm.</li>
+            </ul>
+
+            <h3>EY India - Senior Associate, Talent Acquisition</h3>
+            <ul>
+                <li>Supported EY Ripples Disha Scholars by reviewing and guiding resumes for 10 candidates.</li>
+                <li>Managed marketing initiatives (e.g., EY Ripples).</li>
+            </ul>
+        </div>
         
-        <header class="header">
-            <h1>Your Name</h1>
-            <p>Full Stack Developer | Tech Enthusiast | Open Source Contributor</p>
-            <img src="https://via.placeholder.com/150" alt="Your Profile Picture" class="profile-picture">
-        </header>
-
-        <section class="section">
-            <h2>About Me</h2>
-            <p>Welcome to my GitHub page! I'm a passionate developer with a love for building innovative and scalable solutions. I specialize in web technologies and enjoy working on projects that solve real-world problems. In my free time, I contribute to open source projects and explore new technologies. 
-
-[Image of a laptop with code]
- Feel free to connect with me and check out my repositories!</p>
-        </section>
-        
-        <section class="section">
-            <h2>My Projects</h2>
-
-            <div class="project">
-                <h3>Project Title One</h3>
-                <p>A brief description of your project. Mention the technologies used (e.g., Python, JavaScript, React) and what it does.
-                <br>
-                <a href="https://github.com/yourusername/project-one" target="_blank">View on GitHub</a>
-                </p>
-            </div>
-
-            <div class="project">
-                <h3>Project Title Two</h3>
-                <p>Another brief description of your project, highlighting its features and your contributions.
-                <br>
-                <a href="https://github.com/yourusername/project-two" target="_blank">View on GitHub</a>
-                </p>
-            </div>
-        </section>
+        <div class="section">
+            <h2>EXTRACURRICULAR ACTIVITIES</h2>
+            <ul>
+                <li><strong>Colgate LEAP Forward:</strong> Selected for Masterclass on innovation as a part of the 2024 program.</li>
+                <li><strong>Sports:</strong> Secured a Second Place in Athletics and in a Relay event at the school level in 2016.</li>
+            </ul>
+        </div>
     </div>
-
-    <footer class="footer">
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
-
 </body>
 </html>
